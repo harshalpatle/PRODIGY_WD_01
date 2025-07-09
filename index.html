@@ -3,52 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WanderWise Travel Co.</title>
+  <title>RoamRoots Journeys</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">WanderWise</div>
-      <button class="menu-toggle" id="menuToggle">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Tours</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Site Content -->
+  <header class="banner">
+    <div class="brand">RoamRoots</div>
+    <button class="nav-toggle" id="toggleNav">&#9776;</button>
+    <ul class="navigation" id="navigation">
+      <li><a href="#">Start</a></li>
+      <li><a href="#">Spots</a></li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">Talk To Us</a></li>
+    </ul>
+    <button class="dark-mode-toggle" id="darkToggle">🌙</button>
+  </header>
 
-    <!-- Hero Content -->
-    <div class="hero-content">
-      <h1>Adventure Awaits</h1>
-      <p>Explore the world with our expert-guided tours</p>
-      <a href="#" class="cta-button">Get Started</a>
-    </div>
-  </section>
+  <main class="showcase" id="showcase">
+    <h1 class="typewriter">Wander Freely</h1>
+    <p class="fade-in">Unforgettable trips tailored just for you.</p>
+    <a href="#" class="start-button fade-in">Begin Your Journey</a>
+  </main>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>Why Travel With Us?</h2>
-    <p>WanderWise offers hand-picked destinations, expert local guides, and unforgettable experiences.</p>
-    <div class="features">
-      <div class="feature-box">
-        <h3>Tailored Itineraries</h3>
-        <p>Trips designed around your interests, not just schedules.</p>
+  <section class="highlights fade-in">
+    <h2>What Sets Us Apart</h2>
+    <p>We don’t just take you places, we immerse you in them.</p>
+    <div class="perks">
+      <div class="perk fade-in">
+        <h3>Custom Paths</h3>
+        <p>Your vibe, your itinerary—crafted with care.</p>
       </div>
-      <div class="feature-box">
-        <h3>Expert Guides</h3>
-        <p>Local pros who know the stories behind the sights.</p>
+      <div class="perk fade-in">
+        <h3>Insider Insight</h3>
+        <p>Guides who know the soul of every street.</p>
       </div>
-      <div class="feature-box">
-        <h3>24/7 Support</h3>
-        <p>We’re just a call or tap away throughout your trip.</p>
+      <div class="perk fade-in">
+        <h3>Help, Anytime</h3>
+        <p>Real humans. Real support. Around the clock.</p>
       </div>
     </div>
   </section>
+  
+  <section class="destinations fade-in">
+  <h2>Featured Destinations</h2>
+  <p>Explore some of the hottest spots on the planet — curated just for you.</p>
+  <div class="dest-card-grid">
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Bali">
+      <div class="dest-content">
+        <h3>Bali, Indonesia</h3>
+        <p>Surf, temples, and rice terraces in paradise.</p>
+        <a href="#" class="btn-small">Discover</a>
+      </div>
+    </div>
+    <div class="dest-card">
+  <img src="https://images.unsplash.com/photo-1508264165352-258db2ebd59b?auto=format&fit=crop&w=800&q=80" alt="Iceland Glacier">
+  <div class="dest-content">
+    <h3>Iceland</h3>
+    <p>Massive glaciers, icy lagoons, and epic nature trails.</p>
+    <a href="#" class="btn-small">Explore</a>
+  </div>
+</div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=800&q=80" alt="Kyoto, Japan">
+      <div class="dest-content">
+        <h3>Kyoto, Japan</h3>
+        <p>Historic temples and cherry blossoms galore.</p>
+        <a href="#" class="btn-small">Visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
   <script src="script.js"></script>
 </body>
