@@ -10,6 +10,11 @@ html, body {
   color: #333;
   transition: background 0.4s, color 0.4s;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body.dark {
   background-color: #121212;
   color: #f1f1f1;
@@ -236,6 +241,11 @@ body.dark .perk {
   text-align: center;
   color: white;
 }
+.showcase p {
+  margin-top: 16px;
+  padding: 0 20px;
+}
+
 
 /* 🔧 Responsive Fixes */
 .container {
@@ -364,4 +374,78 @@ body.dark .dest-card {
 }
 body.dark .dest-content p {
   color: #ccc;
+}
+
+/* 🌍 Footer Styling */
+.site-footer {
+  background-color: #222;
+  color: #f1f1f1;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+}
+.site-footer p {
+  margin: 8px 0;
+}
+
+/* 🧼 Padding and Margin Cleanup */
+h1, h2, h3, p {
+  margin-bottom: 16px;
+  padding: 0 10px;
+  line-height: 1.6;
+}
+section {
+  margin-bottom: 60px;
+}
+
+/* Additional styles at bottom of styles.css */
+
+/* 🌍 Footer Styling */
+.site-footer {
+  background-color: #222;
+  color: #f1f1f1;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+}
+.site-footer p {
+  margin: 8px 0;
+}
+
+/* Spacing for Text */
+h1, h2, h3, p {
+  margin-bottom: 16px;
+  padding: 0 10px;
+  line-height: 1.6;
+}
+section {
+  margin-bottom: 60px;
+}
+.showcase p {
+  margin-top: 16px;
+  padding: 0 20px;
+}
+
+/* 🎨 Animated Gradient Buttons */
+.start-button,
+.btn-small {
+  background: linear-gradient(270deg, #ff5733, #ffbd33);
+  background-size: 400% 400%;
+  animation: gradientSlide 5s ease infinite;
+}
+@keyframes gradientSlide {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌀 Subtle Card Tilt */
+.dest-card {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+.dest-card:hover {
+  transform: perspective(800px) rotateY(4deg) scale(1.02);
 }
